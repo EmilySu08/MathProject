@@ -14,6 +14,10 @@ First import the folowing packages:
 * numpy 
 * pandas
 * %matplotlib inline
+* import PCA from sklearn.decomposition
+* import StandardScaler from sklearn.preprocessing 
+* import LinearRegression from sklearn.linear_model 
+* import cluster from sklearn 
 
 
 Then read in and process "user_ratings.csv" and "user_history.csv" using the pandas package "read_csv".
