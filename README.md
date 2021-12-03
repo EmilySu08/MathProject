@@ -7,9 +7,9 @@ In the models we have:
 
 ## Model 1: SGD Regressor 
 
+### Step 1: Kmeans clustering/PCA Analysis
 
-
-
+### Step 2: Building the SGD Regressor
 
 
 
