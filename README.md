@@ -14,7 +14,11 @@ First import the folowing packages:
 * numpy 
 * pandas
 * %matplotlib inline
+
+
 Then read in and process "user_ratings.csv" and "user_history.csv" using the pandas package "read_csv".
+
+Implement the elbow method for Kmeans clustering to find the appropriate amount of clusters to use on "user_history.csv". Plot the results on a graph to visualize the 'elbow' on each cluster. 
 
 
 ### Step 2: Building the SGD Regressor
