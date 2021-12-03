@@ -8,6 +8,14 @@ In the models we have:
 ## Model 1: SGD Regressor 
 
 ### Step 1: Kmeans clustering/PCA Analysis
+First import the folowing packages: 
+* sklearn.cluster.Kmeans 
+* matplotlib.pyplot 
+* numpy 
+* pandas
+* %matplotlib inline
+Then read in and process "user_ratings.csv" and "user_history.csv" using the pandas package "read_csv".
+
 
 ### Step 2: Building the SGD Regressor
 
