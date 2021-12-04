@@ -9,20 +9,20 @@ In the models we have:
 
 ### Step 1: Kmeans clustering/PCA Analysis
 First import the folowing packages: 
-* sklearn.cluster.Kmeans 
-* matplotlib.pyplot 
+* sklearn
+* matplotlib
 * numpy 
 * pandas
 * %matplotlib inline
-* import PCA from sklearn.decomposition
-* import StandardScaler from sklearn.preprocessing 
-* import LinearRegression from sklearn.linear_model 
-* import cluster from sklearn 
-
+   
+#### Part 1: Kmeans Clustering
 
 Then read in and process "user_ratings.csv" and "user_history.csv" using the pandas package "read_csv".
 
-Implement the elbow method for Kmeans clustering to find the appropriate amount of clusters to use on "user_history.csv". Plot the results on a graph to visualize the 'elbow' on each cluster. 
+Using the cluster package in sklearn, implement the elbow method for Kmeans clustering to find the appropriate amount of clusters to use on "user_history.csv". Plot the results on a graph, with plyplot, to visualize the 'elbow' on each cluster. 
+
+#### Part 2: PCA analysis
+Using the decomposition package in sklearn change the "user_history.csv" into 2 dimensions and normalizing the data by using the preprocessing package. 
 
 
 ### Step 2: Building the SGD Regressor
