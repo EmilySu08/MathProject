@@ -22,7 +22,11 @@ Then read in and process "user_ratings.csv" and "user_history.csv" using the pan
 Using the cluster package in sklearn, implement the elbow method for Kmeans clustering to find the appropriate amount of clusters to use on "user_history.csv". Plot the results on a graph, with plyplot, to visualize the 'elbow' on each cluster. 
 
 #### Part 2: PCA analysis
-Using the decomposition package in sklearn change the "user_history.csv" into 2 dimensions and normalizing the data by using the preprocessing package. 
+Using the decomposition package in sklearn change the "user_history.csv" into 2 dimensions and normalizing the data by using the preprocessing package. Then transform the data into pca features with fit_transform.  
+
+Create a plot of the variance of the PCA components using matplotlib plyplot. Find the variance of each of the pca feautres with explained_variance_ratio_ and rounding the values to an appropriate number of decimal places. For each variance create labels to fiquire out the frequency of each variance. 
+
+Using the cluster package in sklearn, make 3 clusters and fit on "user_history.csv".
 
 
 ### Step 2: Building the SGD Regressor
