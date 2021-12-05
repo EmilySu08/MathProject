@@ -30,7 +30,17 @@ Using the cluster package in sklearn, make 3 clusters and fit on "user_history.c
 
 
 ### Step 2: Building the SGD Regressor
+Using the clusters that were identified in the previous step, create three dataframes: one for each cluster that includes all of the information from "user_history.csv" that are part of the cluster. 
 
+Call the make_pipeline package from sklearn with parameters being StandardScalar and SGDRegressor using the default parameters included in SGDRegressor to create the model. 
+
+For each of the three dataframes created for each cluster, do the following:
+ 1.Iterate through each of the 75 products included in "user_ratings.csv". 
+ 2.Index the user_history information to only include users that already have ratings for the products being analyzed (remove any users where the product rating is NA for that product). 
+ 3.Fit the model on this data and use it to predict ratings for all of the users for that product. Repeat this for all products and for each cluster dataframe.
+ 4.Add these predictions to a dataframe
+
+Merge the results and using the melt function, transform the data into the appropriate format similar to "user_ratings.csv". This data will be used to compare our predictions to the predictions included in "user_ratings.csv" and calculate the accuracy.
 
 
 
