@@ -27,6 +27,7 @@ Using the decomposition package in sklearn change the "user_history.csv" into 2 
 Create a plot of the variance of the PCA components using matplotlib plyplot. Find the variance of each of the pca feautres with explained_variance_ratio_ and rounding the values to an appropriate number of decimal places. For each variance create labels to fiquire out the frequency of each variance. 
 
 Using the cluster package in sklearn, make 3 clusters and fit on "user_history.csv".
+Then find the centers of each cluster using the model from fitting the history data using the package clsuter_centers_. Create a new model that recreates the 3 clusters with arrays using the Kmeans cluster package. Create a for loop that runs through the unique centers of of the Kmeans model and plot each entity in the user_history data accordingly on a scatter plot. 
 
 
 ### Step 2: Building the SGD Regressor
@@ -35,10 +36,11 @@ Using the clusters that were identified in the previous step, create three dataf
 Call the make_pipeline package from sklearn with parameters being StandardScalar and SGDRegressor using the default parameters included in SGDRegressor to create the model. 
 
 For each of the three dataframes created for each cluster, do the following:
- 1.Iterate through each of the 75 products included in "user_ratings.csv". 
- 2.Index the user_history information to only include users that already have ratings for the products being analyzed (remove any users where the product rating is NA for that product). 
- 3.Fit the model on this data and use it to predict ratings for all of the users for that product. Repeat this for all products and for each cluster dataframe.
- 4.Add these predictions to a dataframe
+
+ 1. Iterate through each of the 75 products included in "user_ratings.csv". 
+ 2. Index the user_history information to only include users that already have ratings for the products being analyzed (remove any users where the product rating is NA for that product). 
+ 3. Fit the model on this data and use it to predict ratings for all of the users for that product. Repeat this for all products and for each cluster dataframe.
+ 4. Add these predictions to a dataframe
 
 Merge the results and using the melt function, transform the data into the appropriate format similar to "user_ratings.csv". This data will be used to compare our predictions to the predictions included in "user_ratings.csv" and calculate the accuracy.
 
