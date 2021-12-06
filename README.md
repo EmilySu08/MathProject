@@ -47,3 +47,28 @@ Merge the results and using the melt function, transform the data into the appro
 
 
 ## Model 2: Keras Model 
+### Step 1: Setting up
+First import the folowing packages: 
+* sklearn
+* matplotlib
+* numpy 
+* pandas
+* mpl_toolkits.mplot3d
+* tensorflow
+* keras
+
+### Step 2: Get all Data
+Firstly we merged the two csv files into one with shape 4500*176. Each row in the merged datafrome represents the attributes for one user. For each user, there are 100 history percentage coefficients and 75 ratings for different products.
+Then, the first 3500 users' data are splitted into the training set and the rest are put into the testing set. 
+In the end, in order to use the data in the model, we turned these datafromes into a numpy arrays with shape 3500*100 and 3500*75 namely the first input and second input.
+
+   
+### Step 3: Building the Keras Model
+The goal for the Keras model is to find a tranformation matrix W to map the 100 percentage coefficients into an array with length 75. In other words, we want to match the 75 ratings with the given 100 percentage coefficients. This is the model we used:
+ 1. Fill in 5 to the missing entries.
+ 2. Apply sigmoid activation function for the middle layer.
+ 3. Apply softmax activation function for the final output layer.
+ 4. Apply mean square error loss function to the model.
+ 5. Train the model for 1000 times.
+In the end, the accuracy rate is about 63%.
+
