@@ -58,9 +58,9 @@ First import the folowing packages:
 * keras
 
 ### Step 2: Get all Data
-Firstly we merged the two csv files into one with shape 4500*176. Each row in the merged datafrome represents the attributes for one user. For each user, there are 100 history percentage coefficients and 75 ratings for different products.
+Firstly we merged the two csv files into one with shape 4500 * 176. Each row in the merged datafrome represents the attributes for one user. For each user, there are 100 history percentage coefficients and 75 ratings for different products.
 Then, the first 3500 users' data are splitted into the training set and the rest are put into the testing set. 
-In the end, in order to use the data in the model, we turned these datafromes into a numpy arrays with shape 3500*100 and 3500*75 namely the first input and second input.
+In the end, in order to use the data in the model, we turned these dataframes into numpy arrays with shape 3500*100 and 3500*75 namely the first input and second input.
 
    
 ### Step 3: Building the Keras Model
