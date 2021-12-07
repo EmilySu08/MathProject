@@ -42,7 +42,7 @@ For each of the three dataframes created for each cluster, do the following:
  3. Fit the model on this data and use it to predict ratings for all of the users for that product. Repeat this for all products and for each cluster dataframe.
  4. Add these predictions to a dataframe
 
-Merge the results and using the melt function, transform the data into the appropriate format similar to "user_ratings.csv". This data will be used to compare our predictions to the predictions included in "user_ratings.csv" and calculate the accuracy.
+Merge the results and using the melt function, transform the data into the appropriate format similar to "user_ratings.csv". This data will be used to compare our predictions to the predictions included in "user_ratings.csv" and calculate the accuracy and R-squared metric.
 
 
 
